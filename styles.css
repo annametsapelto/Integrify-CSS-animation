@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.pic {
+    margin: 3em;
+    text-align: center;
+}
+
+#heart {
+    animation: pinkHeart 3s alternate infinite ease-in;
+    transform-origin: center;
+}
+
+#shoe {
+    animation: footTap 1s alternate infinite linear;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+#fullHead {
+    animation: look 3s alternate infinite ease-in;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes pinkHeart {
+    0% {transform: scale(.8);}
+    100% {transform: scale(1.2);}
+
+}
+
+@keyframes footTap {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(20deg);}
+}
+@keyframes look {
+    0% {transform: rotateZ(-10deg)}
+    100% {transform: rotateZ(20deg);}
+}
